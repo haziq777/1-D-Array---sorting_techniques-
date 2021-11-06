@@ -34,8 +34,8 @@ int main(int argc, char const *argv[])
   }
   cout << "\nYour arrray before sorting is:" << endl;
   display(a, n);
-  sort(a, a + n,compare);
-  cout << "\nYour arrray after sorting is:" << endl;
+  sort(a, a + n,compare);                               //     first term of array is included(a) and last term is ( a+(n-1) ) but it is not included
+  cout << "\nYour arrray after sorting is:" << endl;   //      therfore we write it as ( a+(n-1) ) to include it as (a+ n-1) .............
   display(a, n);
   return 0;
 }
